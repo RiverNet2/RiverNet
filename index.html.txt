@@ -1,37 +1,113 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Mi primera página</title>
-</head>
-<body>
-
-    <h1>Hola mundo 👋</h1>
-    <p>Esta es mi primera página web</p>
-
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>RiverNet</title>
-    <style>
-        body {
-            background-color: #f2f2f2;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RiverNet | Internet Rápido</title>
 
-        img {
-            max-width: 90%;
-            height: auto;
-            margin-top: 50px;
-        }
-    </style>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0a0f1f, #0d1b2a);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 40px 20px;
+}
+
+.logo {
+    width: 300px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.servicios {
+    padding: 40px 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.1);
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+</style>
+
 </head>
 <body>
 
-    <img src="logo.png" alt="Logo RiverNet">
+<header>
+    <img src="logo.png" class="logo">
+    <h1>Internet rápido y confiable</h1>
+    <p>NUNCA DEJES DE COMPARTIR</p>
+</header>
+
+<section class="servicios">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="card">
+        <h3>Internet Hogar</h3>
+        <p>Alta velocidad para tu casa</p>
+    </div>
+
+    <div class="card">
+        <h3>Internet Negocio</h3>
+        <p>Conexión estable para empresas</p>
+    </div>
+
+    <div class="card">
+        <h3>Soporte Técnico</h3>
+        <p>Atención rápida y profesional</p>
+    </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5215554739904" target="_blank">
+    WhatsApp
+</a>
+
+<footer>
+    © 2026 RiverNet - Todos los derechos reservados
+</footer>
 
 </body>
 </html>
